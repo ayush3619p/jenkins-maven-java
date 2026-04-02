@@ -6,13 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                echo 'Pulling code from GitHub...'
-                git 'https://github.com/ayush3619p/jenkins-maven-java.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo 'Building using Maven...'
